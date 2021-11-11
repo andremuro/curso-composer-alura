@@ -1,0 +1,33 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/andremuro/formularios.git"
+        }
+    ],
+    "require": {
+        "symfony/css-selector": "^5.3",
+        "guzzlehttp/guzzle": "^7.4",
+        "symfony/dom-crawler": "^5.3"
+    },
+    "autoload": {
+        "files": ["./src/funcoes.php"],
+        "classmap": ["./Teste.php","./Teste2.php"],
+
+        "psr-4": {
+            "Alura\\BuscadorDeCurso\\": "src/"
+        }
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.6",
+        "phan/phan": "^5.2"
+    },
+    "scripts": {
+        "cs": "phpcs --standard=PSR12 src/",
+        "phan" : "phan --allow-polyfill-parser src/Buscador.php",
+        "check" : [
+            "@phan",
+            "@cs"
+        ]
+    }
+}
