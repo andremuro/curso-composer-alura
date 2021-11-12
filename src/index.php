@@ -10,16 +10,16 @@
     <?php
 
         require_once '../vendor/autoload.php';
-
-        /*
         Teste::metodo();
-        Teste2::metodo();
-        exit();
-        */
 
         use Alura\BuscadorDeCurso\Buscador;
         use GuzzleHttp\Client;
         use Symfony\Component\DomCrawler\Crawler;
+
+        /*
+        $testClassMap = new TesteClassMap();
+        $testFuncao = $testClassMap->testClassMap();
+        */
 
         $cliente = new Client(['base_uri' => 'https://www.alura.com.br/']); // da para utilizar qualquer site
         $crawler = new Crawler();

@@ -2,7 +2,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/andremuro/formularios.git"
+            "url": "https://github.com/andremuro/cursoComposerAlura.git"
         }
     ],
     "require": {
@@ -12,8 +12,7 @@
     },
     "autoload": {
         "files": ["./src/funcoes.php"],
-        "classmap": ["./Teste.php","./Teste2.php"],
-
+        "classmap": ["./Teste.php"],
         "psr-4": {
             "Alura\\BuscadorDeCurso\\": "src/"
         }

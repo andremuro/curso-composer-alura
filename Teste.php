@@ -1,7 +1,12 @@
 <?php
-//Teste para usar o ClassMap[MAPEAMENTO DE CLASSE] no COMPOSER.JSON
-class Teste {
-    public static function metodo(){
-        echo 'Teste';
+
+class Teste
+{
+    /**
+     * @author André
+     * @return string Falando que o arquivo foi requirido com sucesso
+     */
+    public static function metodo() {
+        echo '<p>Chamou o arquivo pelo Class Map do Composer.json</p>';
     }
 }
