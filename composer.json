@@ -12,7 +12,7 @@
     },
     "autoload": {
         "files": ["./src/funcoes.php"],
-        "classmap": ["./Teste.php"],
+        "classmap": ["./TestClassMap.php"],
         "psr-4": {
             "Alura\\BuscadorDeCurso\\": "src/"
         }
