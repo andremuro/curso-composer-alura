@@ -10,15 +10,19 @@
     <?php
 
         require_once '../vendor/autoload.php';
-        Teste::metodo();
+        
 
         use Alura\BuscadorDeCurso\Buscador;
         use GuzzleHttp\Client;
         use Symfony\Component\DomCrawler\Crawler;
 
-        /*
-        $testClassMap = new TesteClassMap();
-        $testFuncao = $testClassMap->testClassMap();
+        TestClassMap::metodo(); 
+        
+        
+        /**Por se tratar de uma funcão statica ela pode ser escrita dessa forma, que tem o mesmo efeito das duas linha comentadas abaixo.
+        *$testClassMap = new TestClassMap();        
+        *$testFuncao = $testClassMap->metodo();
+        *É IMPORTANTE DESTACAR QUE A CADA ALTERAÇÃO NO CAMINHO DO AUTOLOADO É NECESSARIO RODAR O COMANDO COMPOSER DUMP-AUTOLOAD OU COMPOSER DUMPAUTOLOAD PARA ELE ATUALIZAR.
         */
 
         $cliente = new Client(['base_uri' => 'https://www.alura.com.br/']); // da para utilizar qualquer site
